@@ -1,0 +1,27 @@
+:root{
+  --bg: #0f1724;
+  --panel: #111318;
+  --btn: #1e2430;
+  --accent: #ffb86b;
+  --muted: #9aa4b2;
+  --text: #e6eef6;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter,Segoe UI,Roboto,Arial;background:var(--bg);color:var(--text)}
+.app{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px}
+.title{margin:0 0 12px;font-size:20px;color:var(--muted)}
+
+.calculator{width:320px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);border-radius:14px;padding:16px;box-shadow:0 6px 24px rgba(0,0,0,0.6)}
+.screen{background:var(--panel);padding:14px;border-radius:10px;color:var(--text);margin-bottom:12px;min-height:72px;display:flex;flex-direction:column;justify-content:center}
+.expression{font-size:14px;color:var(--muted);min-height:18px;word-break:break-all}
+.display{font-size:28px;font-weight:600;text-align:right;min-height:30px}
+
+.keys{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.btn{padding:14px;border-radius:8px;border:0;background:var(--btn);color:var(--text);font-size:16px;cursor:pointer;box-shadow:0 2px 0 rgba(0,0,0,0.4)}
+.btn:active{transform:translateY(1px)}
+.btn.action{background:#313544}
+.btn.op{background:linear-gradient(180deg,#2f8fb2,#2b6f8f)}
+.btn.equals{grid-column:4 / 5;background:var(--accent);color:#111;font-weight:700}
+.btn.equals:hover{filter:brightness(1.05)}
+.help{margin-top:12px;color:var(--muted);font-size:13px;text-align:center}

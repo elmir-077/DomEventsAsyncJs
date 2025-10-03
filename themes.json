@@ -1,0 +1,18 @@
+{
+  "default": {
+    "--bg": "#0f1724",
+    "--panel": "#111318",
+    "--btn": "#1e2430",
+    "--accent": "#ffb86b",
+    "--muted": "#9aa4b2",
+    "--text": "#e6eef6"
+  },
+  "light": {
+    "--bg": "#f3f4f6",
+    "--panel": "#ffffff",
+    "--btn": "#f0f3f8",
+    "--accent": "#4f46e5",
+    "--muted": "#6b7280",
+    "--text": "#0f1724"
+  }
+}
